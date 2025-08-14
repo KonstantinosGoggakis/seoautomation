@@ -1,0 +1,96 @@
+/* App.css */
+
+:root {
+  --primary: #6366f1;
+  --secondary: #a855f7;
+  --bg-light: #f9fafb;
+  --text-dark: #111827;
+  --text-light: #6b7280;
+  --accent: #4ade80;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #fdfdfe);
+  color: var(--text-dark);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1, h2, label {
+  font-weight: 700;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+input, button {
+  font-size: 1rem;
+  border-radius: 1rem;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #d1d5db;
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+}
+
+button {
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+  transform: translateY(-2px);
+}
+
+.card {
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  margin-top: 2rem;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--accent);
+  background: #f9fafb;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.logo {
+  height: 5em;
+  transition: filter 300ms ease;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em var(--primary));
+}
